@@ -11,13 +11,18 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
     -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
+    -- this is useful for naming menust
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>aa"] = { "ggVG", desc = "Select all in a file" },
+    ["<enter>"] = { "o<esc>", desc = "Create new line by enter" },
+    ["<leader>gs"] = { "<cmd>Neotree git_status<cr>", desc = "Show git status in explorer bar" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
