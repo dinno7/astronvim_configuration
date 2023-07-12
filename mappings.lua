@@ -23,11 +23,17 @@ return {
     ["<leader>aa"] = { "ggVG", desc = "Select all in a file" },
     ["<enter>"] = { "o<esc>", desc = "Create new line by enter" },
     ["<leader>gs"] = { "<cmd>Neotree git_status<cr>", desc = "Show git status in explorer bar" },
+    ["<C-Z>"] = { "<esc>ua" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
-  t = {
+  t = { -- Terminal
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  i = {
+    ["<C-S>"] = { "<esc>:w!<cr>a" },
+    ["<C-Z>"] = { "<esc>ua" },
+  },
+  v = {},
 }
