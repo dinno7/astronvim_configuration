@@ -22,6 +22,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>aa"] = { "ggVG", desc = "Select all in a file" },
     ["<enter>"] = { "o<esc>", desc = "Create new line by enter" },
+    ["<leader>i"] = { "o<esc>", desc = "Create new line by enter" },
+    ["<leader>I"] = { "O<esc>", desc = "Create new above line" },
     ["<leader>gs"] = { "<cmd>Neotree git_status<cr>", desc = "Show git status in explorer bar" },
     ["<C-Z>"] = { "<esc>ua" },
     -- quick save
